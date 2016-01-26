@@ -1,0 +1,11 @@
+*.pyc
+
+#Heroku files
+Procfile
+requirements.txt
+
+#Files created by app
+a.out
+ex.py
+hello.c
+hello.cpp
