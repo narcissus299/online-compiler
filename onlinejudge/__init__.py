@@ -10,7 +10,7 @@ lang = {"Python":('ex.py','python ex.py'),"C":('hello.c','gcc hello.c;./a.out'),
 
 
 @app.route("/",methods=['GET', 'POST'])
-def hello():
+def index():
 
 	if request.method == 'GET':
 		return render_template("home.html",output_value = "")
@@ -27,5 +27,4 @@ def hello():
 		terminal_processes = Popen(l[1],shell=True,stdout=PIPE)
 		output = terminal_processes.communicate()[0]
 		return render_template("home.html",output_value=output)
-    	
-
+    
