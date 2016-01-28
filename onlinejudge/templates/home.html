@@ -62,10 +62,15 @@
 			<form method="POST">
 				<div class="form-group">
 				  <label for="code">Code</label>
-				  <textarea class="form-control" rows="8" id="code" name="code"></textarea>
+				  <textarea class="form-control" rows="8" id="code" name="code">{{code_text}}</textarea>
+				</div>
+				<div class="form-group">
+				  <label for="input">Input</label>
+				  <textarea class="form-control" rows="8" id="input" name="input"></textarea>
 				</div>
 				<select class="form-control" id="lang" name="lang">
 				  <option>Python</option>
+				  <option>Python3</option>
 				  <option>C</option>
 				  <option>C++</option>
 				  <option>Java</option>
